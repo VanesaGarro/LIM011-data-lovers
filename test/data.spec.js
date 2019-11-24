@@ -26,7 +26,7 @@ const input = [
     image: 'http://hp-api.herokuapp.com/images/harry.jpg',
   }];
 const ouputinicio = [{
-  imagenCasa: '/imagenes/casa/gryffindor.jpg',
+  imagenCasa: 'img/casa/gryffindor.jpg',
   name: 'Harry Potter',
   image: 'http://hp-api.herokuapp.com/images/harry.jpg',
   species: 'human',
@@ -37,7 +37,7 @@ const ouputinicio = [{
   wood: 'holly',
   core: 'phoenix feather',
   length: 11,
-  nucleo: '/imagenes/phoenix.jpg',
+  nucleo: 'img/phoenix.jpg',
   rol: 'Student',
   patronus: 'stag',
 }];
@@ -66,23 +66,23 @@ describe('La funcion AGREGAR Imagen Casa ingresa un objeto y retornar un string 
   });
   it('Debería ingresar un objeto con la propiedad house Gryffindor y retonar un string con la imagen que corresponde a la propiedad', () => {
     const inputImagenCasa = { house: 'Gryffindor' };
-    expect(agregarImagenCasa(inputImagenCasa)).toEqual('/imagenes/casa/gryffindor.jpg');
+    expect(agregarImagenCasa(inputImagenCasa)).toEqual('img/casa/gryffindor.jpg');
   });
   it('Debería ingresar un objeto con la propiedad house Hufflepufft y retonar un string con la imagen que corresponde a la propiedad', () => {
     const inputImagenCasa = { house: 'Hufflepuff' };
-    expect(agregarImagenCasa(inputImagenCasa)).toEqual('/imagenes/casa/Hufflepuff.jpg');
+    expect(agregarImagenCasa(inputImagenCasa)).toEqual('img/casa/Hufflepuff.jpg');
   });
   it('Debería ingresar un objeto con la propiedad house Ravenclaw y retonar un string con la imagen que corresponde a la propiedad', () => {
     const inputImagenCasa = { house: 'Ravenclaw' };
-    expect(agregarImagenCasa(inputImagenCasa)).toEqual('/imagenes/casa/ravenclaw.jpg');
+    expect(agregarImagenCasa(inputImagenCasa)).toEqual('img/casa/ravenclaw.jpg');
   });
   it('Debería ingresar un objeto con la propiedad house Slytherin y retonar un string con la imagen que corresponde a la propiedad', () => {
     const inputImagenCasa = { house: 'Slytherin' };
-    expect(agregarImagenCasa(inputImagenCasa)).toEqual('/imagenes/casa/slytherin.png');
+    expect(agregarImagenCasa(inputImagenCasa)).toEqual('img/casa/slytherin.png');
   });
   it('Debería ingresar un objeto con la propiedad house vacía y retonar un string con la imagen que corresponde a la propiedad', () => {
     const inputImagenCasa = { house: '' };
-    expect(agregarImagenCasa(inputImagenCasa)).toEqual('/imagenes/pregunta.jpg');
+    expect(agregarImagenCasa(inputImagenCasa)).toEqual('img/casa/pregunta.jpg');
   });
 });
 // IMAGENES QUE SE AGREGAN AL NUCLEO DE LA VARITA
@@ -92,15 +92,15 @@ describe('La funcion AGREGAR VARITA ingresa un objeto y retornar un string indic
   });
   it('Debería ingresar un objeto con la propiedad core dragon heartstring y retonar un string con la imagen que corresponde a la propiedad', () => {
     const inputdra = { wand: { core: 'dragon heartstring' } };
-    expect(agregarVarita(inputdra)).toEqual('/imagenes/dragon.jpg');
+    expect(agregarVarita(inputdra)).toEqual('img/dragon.jpg');
   });
   it('Debería ingresar un objeto con la propiedad core unicorn tail-hair y retonar un string con la imagen que corresponde a la propiedad', () => {
     const inputuni = { wand: { core: 'unicorn tail-hair' } };
-    expect(agregarVarita(inputuni)).toEqual('/imagenes/unicorn.jpg');
+    expect(agregarVarita(inputuni)).toEqual('img/unicorn.jpg');
   });
   it('Debería ingresar un objeto con la propiedad core phoenix y retonar un string con la imagen que corresponde a la propiedad', () => {
     const inputpho = { wand: { core: 'phoenix feather' } };
-    expect(agregarVarita(inputpho)).toEqual('/imagenes/phoenix.jpg');
+    expect(agregarVarita(inputpho)).toEqual('img/phoenix.jpg');
   });
   it('Debería ingresar un objeto con la propiedad core vacio y retonar un string vacio ', () => {
     const inputpho = { wand: { core: '' } };

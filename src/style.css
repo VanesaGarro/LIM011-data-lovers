@@ -134,7 +134,7 @@ nav li a:hover{
   border-color:#796B07 ;
 }
 
-#res {
+#paint-template {
   display: flex;
   justify-content:center;
   flex-wrap: wrap;
@@ -204,11 +204,11 @@ div .imagenes-casa img {
 }
 
 /* Cards */
-.card-holder {
+.template-holder-character{
   perspective: 600px;
 }
 
-.card-holder,
+.template-holder-character,
 .card {
   margin: 2px;
 }
@@ -251,7 +251,7 @@ div .imagenes-casa img {
   transform: rotateY(180deg);
 }
 
-.card-holder:hover .card {
+.template-holder-character:hover .card {
   transform: rotateY(180deg);
 }
 .ocultar {
@@ -268,16 +268,16 @@ div .imagenes-casa img {
   margin: 15px;
   padding: 20px;
   text-align:center;
-  border-radius: 9px;
+  border-radius: 20%;
   border-style: solid;
   border-color:#796B07 ;
-  background-image: url(img/fondovarita.jpg); 
+  background-image: url(https://img.buzzfeed.com/buzzfeed-static/static/2016-09/22/8/asset/buzzfeed-prod-fastlane02/anigif_sub-buzz-30802-1474547084-2.gif); 
 }
-.card-container-patronus{
+.template-container-patronus{
   display: flex;
   justify-content: center;
 }
-.card-patronus #letter1{
+.template-patronus #letter1{
   font-size: 13px;
   text-transform: uppercase;
 }
@@ -385,3 +385,5 @@ div .imagenes-casa img {
   
  }
 };
+
+

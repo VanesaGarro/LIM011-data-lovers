@@ -1,14 +1,14 @@
 
 export const objecVarita = {
-  dragon: '/imagenes/dragon.jpg',
-  unicorn: '/imagenes/unicorn.jpg',
-  phonix: '/imagenes/phoenix.jpg',
+  dragon: 'img/dragon.jpg',
+  unicorn: 'img/unicorn.jpg',
+  phonix: 'img/phoenix.jpg',
 };
 
 export const casa = {
-  Gryffindor: '/imagenes/casa/gryffindor.jpg',
-  Hufflepuff: '/imagenes/casa/Hufflepuff.jpg',
-  Ravenclaw: '/imagenes/casa/ravenclaw.jpg',
-  Slytherin: '/imagenes/casa/slytherin.png',
-  noexiste: '/imagenes/pregunta.jpeg',
+  Gryffindor: 'img/casa/gryffindor.jpg',
+  Hufflepuff: 'img/casa/Hufflepuff.jpg',
+  Ravenclaw: 'img/casa/ravenclaw.jpg',
+  Slytherin: 'img/casa/slytherin.png',
+  noexiste: 'img/casa/pregunta.jpg',
 };

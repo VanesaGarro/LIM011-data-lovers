@@ -98,12 +98,12 @@ y de equipo.
 
 - [x] Entender y reconocer los selectores del DOM (querySelector | querySelectorAll).
 - [x] Manejar eventos del DOM. (addEventListener)
-- [ ] Manipular dinámicamente el DOM. (createElement, appendchild, innerHTML, value)
+- [x] Manipular dinámicamente el DOM. (createElement, appendchild, innerHTML, value)
 
 ### Javascript
 
 - [x] Manipular arrays (`filter` | `map` | `sort` | `reduce`).
-- [ ] Consultar, Manipular objects (key | value).
+- [x] Consultar, Manipular objects (key | value).
 - [x] Entender el uso de condicionales (`if-else` | `switch`).
 - [x] Entender el uso de bucles (`for` | `forEach`).
 - [ ] Entender la diferencia entre expression y statements.

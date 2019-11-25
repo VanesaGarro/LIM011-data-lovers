@@ -96,6 +96,7 @@ export const filterVarita = (dataPotter) => {
   return dataVarita;
 };
 
+
 // eslint-disable-next-line max-len
 
 export const searchName = (data, name) => {

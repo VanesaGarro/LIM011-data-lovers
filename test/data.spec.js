@@ -1,5 +1,6 @@
 import {
-  filtrar, searchName, agregarRol, agregarNewData, agregarVarita, agregarImagenCasa,
+// eslint-disable-next-line max-len
+  filtrar, searchName, agregarRol, agregarNewData, agregarVarita, agregarImagenCasa, filterPatronus, filterVarita,
 } from '../src/data.js';
 
 const input = [
@@ -155,5 +156,39 @@ describe('busqueda', () => {
     const dataBm = [{ name: 'Harry Potter', house: 'Gryffindor' }, { name: 'Cho Chang', house: 'Ravenclaw' }, { name: 'Draco Malfoy', house: 'Gryffindor' }];
     const esperoBm = [{ name: 'Harry Potter', house: 'Gryffindor' }, { name: 'Cho Chang', house: 'Ravenclaw' }];
     expect(searchName(dataBm, 'ha')).toEqual(esperoBm);
+  });
+});
+
+describe('La función filtrar Patronus debería ingresar el array potter y filtrarme el objeto con la propiedad patronus, todos aquellos que no estén vacio', () => {
+  it('debería ser una función', () => {
+    expect(typeof filterPatronus).toBe('function');
+  });
+
+  it('debería retornar un array con la propiedad  patronus el cual es diferente a vacio', () => {
+    const dataBM = [{ name: 'Harry Potter', patronus: 'stag' }, { name: 'Draco Malfoy', patronus: '' }];
+    const esperoBM = [{ name: 'Harry Potter', patronus: 'stag' }];
+    expect(filterPatronus(dataBM, 'patronus')).toEqual(esperoBM);
+  });
+});
+
+describe('La función filtrar Varita debería ingresar el array potter y filtrarme los objetos con la propiedad wand, core, legth, todos aquellos que no estén vacio', () => {
+  it('debería ser una función', () => {
+    expect(typeof filterVarita).toBe('function');
+  });
+
+  it('debería retornar un array con la propiedad  wan, core, legth', () => {
+    const dataBM = [{
+      name: 'Minerva McGonagall', wood: '', core: '', length: '',
+    }, {
+      name: 'Draco Malfoy', wood: 'hawthorn', core: 'unicorn tail-hair', length: 10,
+    }, {
+      name: 'Rubeus Hagrid', wood: 'oak', core: '', length: 16,
+    }];
+    const esperoBM = [{
+      name: 'Draco Malfoy', wood: 'hawthorn', core: 'unicorn tail-hair', length: 10,
+    }, {
+      name: 'Rubeus Hagrid', wood: 'oak', core: '', length: 16,
+    }];
+    expect(filterVarita(dataBM, 'wood', 'core', 'length')).toEqual(esperoBM);
   });
 });

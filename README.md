@@ -108,7 +108,7 @@ y de equipo.
 - [x] Entender el uso de bucles (`for` | `forEach`).
 - [ ] Entender la diferencia entre expression y statements.
 - [x] Utilizar funciones (parámetros | argumentos | valor de retorno).
-- [ ] Entender la diferencia entre tipos de datos atómicos y estructurados.
+- [x] Entender la diferencia entre tipos de datos atómicos y estructurados.
 - [x] Utilizar ES Modules (`import` | `export`).
 
 ### Pruebas Unitarias (_testing_)
@@ -120,7 +120,7 @@ y de equipo.
 - [ -] Colaborar en Github (pull requests).
 
 ### Buenas prácticas de desarrollo
-- [- ] Organizar y dividir el código en módulos (Modularización).
+- [x] Organizar y dividir el código en módulos (Modularización).
 - [x] Utilizar identificadores descriptivos (Nomenclatura | Semántica).
 - [x] Utilizar linter para seguir buenas prácticas (ESLINT).
 

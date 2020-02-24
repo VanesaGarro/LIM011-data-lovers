@@ -62,14 +62,14 @@ const DataforWand = (dato) => {
   let varitaH = '';
   varitaH = `
             <div class = "box-wands">
-            <div class="imagenes"><img src=/imagenes/varita.gif></div>
+            <div class="imagenes"><img src="../imagenes/varita.gif"></div>
              <label>  ${dato.name}
              <div class = "icono-personajes"> <img src=${dato.image}> </div>
             <button> Madera: ${dato.wood}</button>
             <label> Núcleo :${dato.core}
             <div class="imagenes-nucleo"><img src=${dato.nucleo}></div>
             <label> Longitud: ${dato.length}
-            <div class="icono-longitud"><img src=/imagenes/longitud.png></div>
+            <div class="icono-longitud"><img src="../imagenes/longitud.png"></div>
             
             </div>
             `;

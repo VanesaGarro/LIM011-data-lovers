@@ -69,7 +69,7 @@ const DataforWand = (dato) => {
             <label> Núcleo :${dato.core}
             <div class="imagenes-nucleo"><img src=${dato.nucleo}></div>
             <label> Longitud: ${dato.length}
-            <div class="icono-longitud"><img src="../imagenes/longitud.png"></div>
+            <div class="icono-longitud"><img src=../imagenes/longitud.png></div>
             
             </div>
             `;

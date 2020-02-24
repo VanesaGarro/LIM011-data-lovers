@@ -129,7 +129,7 @@ nav li a:hover{
   padding: 10px 40px;
   margin: 10px;
   border-radius: 50px;
-  background: #f6f4f4 url(/imagenes/icon-web/search-icon.svg) no-repeat;
+  background: #f6f4f4 url(../imagenes/icon-web/search-icon.svg) no-repeat;
   outline:none;
   resize: none;
   font-weight: bold;
@@ -159,7 +159,7 @@ nav li a:hover{
   color: rgb(248, 245, 88);
   font-size: 20px;
   text-shadow: -2px -2px 0px #201e1e, 2px -2px 0px #000000, -2px 2px 0px #000000, 2px 2px 0px #000000;
-  background-image: url(/imagenes/fondovarita.jpg); 
+  background-image: url(../imagenes/fondovarita.jpg); 
   margin: 15px;
   padding: 20px;
   text-align:center;
@@ -230,7 +230,7 @@ div .imagenes-casa img {
 }
 
 .card .front {
-  background-image: url(/imagenes/fondovarita.jpg); 
+  background-image: url(../imagenes/fondovarita.jpg); 
   color:#dfc161  ;
   margin: 15px;
   padding: 20px;
@@ -240,7 +240,7 @@ div .imagenes-casa img {
   border-color: #796B07;
 }
 .card .back {
-  background-image: url(/imagenes/cart.jpg);;
+  background-image: url(../imagenes/cart.jpg);;
   color:#562711 ;
   margin: 15px;
   padding: 20px;
@@ -275,7 +275,7 @@ div .imagenes-casa img {
   border-radius: 9px;
   border-style: solid;
   border-color:#796B07 ;
-  background-image: url(/imagenes/fondovarita.jpg); 
+  background-image: url(../imagenes/fondovarita.jpg); 
 }
 .card-container-patronus{
   display: flex;
